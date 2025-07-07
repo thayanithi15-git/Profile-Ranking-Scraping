@@ -3,6 +3,7 @@
  * Save as: linkedin-profile-scraper.js
  * Run with: node linkedin-profile-scraper.js
  */
+require('dotenv').config();
 
 class LinkedInProfileScraper {
     constructor(apiKey) {
@@ -176,7 +177,7 @@ class LinkedInProfileScraper {
 
 // Configuration - UPDATE THESE VALUES
 const CONFIG = {
-    apiKey: '5c7dedb5d9mshaee26a90b081251p1991c4jsn17b05cb97571', // Your API key
+    apiKey: process.env.LINKEDIN_API_KEY, // Your API key
     urls: [
         'https://www.linkedin.com/in/navani-hk/',
         // 'https://www.linkedin.com/in/cjfollini/',
